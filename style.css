@@ -1,0 +1,67 @@
+/* Part 1 */
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header {
+    width: 100%;
+    text-align: center;
+}
+
+.part1, .part2 {
+    text-align: center;
+    
+    width: 30rem;
+    margin: 2rem;
+    /* display: flex; */
+    /* width: 100%; */
+    /* justify-content: space-between; */
+    /* margin: auto; */
+    background-color: #020302;
+    color: #929292;
+    border-radius: 5px;
+}
+div>button {
+    margin: 20px;
+}
+
+
+#color {
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+#growing {
+    transition: font-size 3s, color 2s;
+}
+
+
+/* Part 2 */
+
+#digit, #digit2 {
+    width: .5em;
+    overflow: hidden;
+    font: 32px monospace;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  #stripe {      
+      display: inline-block;
+  }
+  
+  #stripe.animate {
+    transform: translate(-90%);
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+  }
+
+  #stripe2.animate2 {
+    /* Changed trnasform: translate(-90%); */
+    transform: translate(-1000%); 
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: steps(9, end);
+  }
